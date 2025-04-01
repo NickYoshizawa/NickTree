@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to left top, #1e4d3d, #235644, #285f4a, #2d6951, #327258, #397a5f, #408366, #478b6d, #519477, #5b9c80, #65a58a, #6fae94);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil {
+    border: 1px solid black;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.linktree {
+    margin-top: 40px;
+}
+
+.linktree ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.linktree li {
+    border: 0.2px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer .footer-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-div img {
+    width: 90px;
+    filter: brightness(100);
+    margin-left: -10px;
+}
+
+footer .footer-div h1 {
+    font-weight: normal;
+}
