@@ -1,20 +1,26 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da tela */
+    color: black;
 }
 
 body {
-    background-image: linear-gradient(to left top, #1e4d3d, #235644, #285f4a, #2d6951, #327258, #397a5f, #408366, #478b6d, #519477, #5b9c80, #65a58a, #6fae94);
-
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../resources/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
+
+
 
 ul {
     padding: 0;
@@ -26,25 +32,47 @@ li {
 }
 
 main {
-    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 90px;
+    filter: brightness(100);
+    margin-left: -10px;
+}
+
+footer h1 {
+    font-weight: 100;
+    color: white;
 }
 
 .perfil {
-    border: 1px solid black;
     margin-top: 100px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-shadow: #e0e0e0 2px 2px 0;
+    text-align: center;
 }
 
 .perfil img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: blue;
+    object-fit: cover; 
+    border-radius: 25%; 
+    box-shadow: rgba(0, 0, 0, 0.333) 0px 3px 8px;
 }
 
 .linktree {
@@ -57,32 +85,160 @@ main {
     gap: 30px;
 }
 
-.linktree li {
-    border: 0.2px solid rgb(255, 255, 255);
-    padding: 20px;
-    width: 600px;
+.linktree img {
+    width: 30px;
+}
+
+.linktree p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
     text-align: center;
-    border-radius: 30px;
 }
 
-footer {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
-
-footer .footer-div {
-    width: 100%;
+.linktree li {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 18px;
+    width: 600px;
+    height: 30px;
+    text-align: center;
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.468);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
 }
 
-footer .footer-div img {
-    width: 90px;
-    filter: brightness(100);
-    margin-left: -10px;
+.linktree li:hover {
+    transform: scale(1.04);
+    background: rgb(233, 255, 255);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px); 
 }
 
-footer .footer-div h1 {
-    font-weight: normal;
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+
+body {
+    overflow: auto;
+}
+
+
+@media (max-width: 480px) {
+    .perfil img {
+        background-color: red; 
+    }
+
+    .perfil {
+        margin-top: 50px;
+    }
+    
+    .linktree {
+        margin-top: 20px;
+    }
+
+    .linktree li {
+        width: 250px;
+    }
+
+    .perfil {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 480px) {
+    .perfil img {
+        background-color: red; 
+    }
+
+    .perfil {
+        margin-top: 50px;
+    }
+    
+    .linktree {
+        margin-top: 20px;
+    }
+
+    .linktree li {
+        width: 250px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .perfil img {
+        background-color: orange; 
+    }
+
+    .perfil {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    
+    .linktree {
+        margin-top: 20px;
+    }
+
+    .linktree li {
+        width: 400px;
+    }
+
+    footer h1 {
+        font-weight: 100;
+        color: white;
+        font-size: 30px;
+    }
+    
+}
+
+
+@media (min-width: 1024px) { 
+    .perfil img {
+        background-color: yellow; 
+    }
+
+    .perfil {
+        margin-top: 50px;
+    }
+
+    .linktree {
+        margin-top: 20px;
+    }
+
+    .linktree li {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1280px) { 
+    
+    .perfil img {
+        background-color: green; 
+    }
+
+    .perfil {
+        margin-top: 50px;
+    }
+
+    .linktree {
+        margin-top: 20px;
+    }
+
+    .linktree li {
+        width: 700px;
+    }
 }
