@@ -38,7 +38,7 @@ Você pode visualizar o projeto rodando [clicando aqui](https://NickYoshizawa.gi
 
 ## 📜 Licença
 
-Este projeto é de uso livre para estudos e aprimoramento de habilidades. Sinta-se à vontade para modificar e personalizar.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
