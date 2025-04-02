@@ -34,7 +34,7 @@ Se quiser visualizar como o NickTree se adapta a diferentes dispositivos, confir
 
 ## 🌎 Acesse Online
 
-Você pode visualizar o projeto rodando [clicando aqui](https://NickYoshizawa.github.io/NickTree).
+Você pode visualizar o projeto rodando [clicando aqui](https://nickyoshizawa.github.io/NickTree/).
 
 ## 📜 Licença
 
